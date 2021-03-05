@@ -55,6 +55,8 @@ void keyboardControl(unsigned char key, int x, int y)
 	case 'd':
 		moving_x = 0.1f;
 		break;
+	default:
+		break;
 	}
 }
 
@@ -83,12 +85,12 @@ void cg2()
 	glutInitWindowPosition(100, 100);
 	glutInitWindowSize(500, 500);
 
-	glutCreateWindow("sizeable square");
+	glutCreateWindow("moving square");
 	glClearColor(0, 0, 0, 0);
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
+	
 	gluPerspective(45, 1, 0, 100);
-
 	glutDisplayFunc(renderCG2);
 	glutReshapeFunc(utils::reshape);
 

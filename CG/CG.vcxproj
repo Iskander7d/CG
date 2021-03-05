@@ -125,6 +125,7 @@
   <ItemGroup>
     <ClInclude Include="cg1.hpp" />
     <ClInclude Include="cg2.hpp" />
+    <ClInclude Include="cg3.hpp" />
     <ClInclude Include="utils.hpp" />
   </ItemGroup>
   <ItemGroup>
